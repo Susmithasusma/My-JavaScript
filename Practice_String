@@ -11,24 +11,8 @@ function reverseString(str) {
 // Test cases
 console.log(reverseString("hello")); // Output: "olleh"
 console.log(reverseString("world")); // Output: "dlrow"
-console.log(reverseString("12345")); // Output: "54321"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(reverseString("12345")); // Output: "54321
+=================================================================================================================
 //check Ispalidrome true or false
 
 function isPalindrome(str) {
