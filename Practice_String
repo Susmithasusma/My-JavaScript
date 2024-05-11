@@ -30,7 +30,7 @@ function isPalindrome(str) {
 console.log(isPalindrome("radar")); // Output: true
 
 
-====================================================================================================================
+========================================================================================
 
 How Much is True?
 ------------------
@@ -47,7 +47,7 @@ Return 0 if given an empty array.
 All array items are of the type bool (true or false).
 
 
-***********************************************************
+****************************************************************************************
 function countTrue(arr){
 	let count = 0;
 	for(let i=0; i<arr.length; i++){
@@ -58,7 +58,7 @@ function countTrue(arr){
 	return count; //Print the number of true
 }
 
-***********************************************************
+***********************************************************************************
 
 Sum of all array:
 function sumArray(numbers){
@@ -75,8 +75,61 @@ console.log(sumArray(numbers));
 O/P::
 const numbers = [1, 2, 3, 4, 5];
 console.log(sumArray(numbers)); // Output should be 15
-*************************************************************
 
+*****************************************************************************************
 
+Reverse the string:
 
+function reverseString(str){
+    let reverse = '';
+    for(let i=str.length-1; i>=0; i--){
+        reverse = reverse + str[i];
+    }
+    return reverse;
+}
+const str = "susmavasanth";
+console.log(reverseString(str)); // Output should be "olleh"
 
+*********************************************************************************************
+Print the larger number in the given two numbers:
+function largerNumber(num1,num2){
+    if(num1> num2){
+        return num1;
+    }else
+    return num2;
+    
+}
+
+const num1 = 100;
+const num2 =40; 
+console.log(largerNumber(num1, num2)); // Output should be 20
+
+*********************************************************************************************
+To check given number is odd or even
+
+function checkEvenOrOdd(number){
+    if(number % 2 == 0){
+        return "even";
+    }else
+    return "odd";
+}
+
+const number = 8;
+console.log(checkEvenOrOdd(number)); // Output should be "odd"
+
+*********************************************************************************************
+
+Print only the even numbers:
+
+function filterEvenNumbers(numbers){
+    filter = [];
+    for (let i=0; i<numbers.length; i++)
+    if(numbers[i] % 2 == 0){
+        filter = filter+numbers[i];
+    }
+    return filter;
+}
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12];
+console.log(filterEvenNumbers(numbers)); // Output should be [2, 4, 6, 8, 10]
+
+*********************************************************************************************
