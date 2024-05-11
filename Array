@@ -1,0 +1,47 @@
+let names = [];
+console.log(names);
+let course = ["Name", "HTML","CSS"];
+console.log(course);
+let arr = new Array(3);
+arr[0]="muruga";
+arr[1]="God";
+arr[2]="Mahadev";
+console.log(arr);
+course[1]="Monkey";
+console.log(course);
+let firstTerm = course;
+console.log("Firstline:" + course);
+course.push('Yeruma');
+console.log(course);
+course.unshift('first');
+console.log(course);
+course.pop(course);
+console.log(course);
+course.shift(course);
+console.log(course);
+course.splice(1);
+console.log(course);
+let anotherCourse = ['Me','Vasu'];
+const concateArray = course.concat(anotherCourse);
+console.log(concateArray);
+for(let i=0; i<concateArray.length; i++){
+    console.log(concateArray[i]);
+}
+console.log(concateArray.toString());
+concateArray.pop();
+console.log(concateArray);
+console.log(typeof course);
+
+console.log(course);
+course.push('Maggi');
+console.log(course);
+console.log(course.join('|'));
+//console.log(course.join('|'));
+
+
+
+
+
+
+
+
